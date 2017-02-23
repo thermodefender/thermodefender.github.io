@@ -1,116 +1,222 @@
-<!doctype html>
-<html>
-<head>
-<style>
-	html,
-body {
-   margin:0;
-   padding:0px !important;
-   height:100%;
-}
-#container {
-   min-height:100%;
-   position:relative;
-}
-#body {
-   padding:10px;
-   padding-bottom:60px;   /* Height of the footer */
-}
-#footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:45px;   /* Height of the footer */
-   background:#1c1c1c;;
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+	<title>Thermo Defender</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+
+	<!-- Vendor Styles -->
+	<link rel="stylesheet" href="vendor/bootstrap.css" />
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Yanone+Kaffeesatz:300,400" rel="stylesheet">
 	
-#mce-EMAIL {
-	margin-left: 20px;
-	margin-right: 20px;
-	-webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-	padding: 10px 15px;
-	background-color: #464646;
-	border: 1px solid #242424;
-	width: 200px;
-}
-#input {
-	Background-color: #545454;
-}
-
-#mc-embedded-subscribe {
-     	border-top: 1px solid #868686;
-   	background: #464646;
-   	background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#464646));
-   	background: -webkit-linear-gradient(top, #606060, #464646);
-   	background: -moz-linear-gradient(top, #606060, #464646);
-	background: -ms-linear-gradient(top, #606060, #464646);
-   	background: -o-linear-gradient(top, #606060, #464646);
-	font-size: 12px;
-	text-transform: uppercase;
-	border: 1px solid #313131;
-	-webkit-border-radius: 37px;
-	-moz-border-radius: 37px;
-	border-radius: 37px;
-	padding: 8px 15px;
-	background-color: #606060;
-	color: #000;
-}
+	<!-- App Styles -->
+	    <link rel="stylesheet" href="css/style.css"/>
 
 
-	
-</style>
-<meta charset="utf-8">
-<title>Thermo Defender - Thermal smart connected device.</title>
+        <style>
+
+            #mce-EMAIL {
+                margin-left: 20px;
+                margin-right: 20px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                padding: 10px 15px;
+                background-color: #464646;
+                border: 1px solid #242424;
+                width: 200px;
+                color: #777;
+                font-size: 14px;
+            }
+
+            ::-webkit-input-placeholder { /* Chrome */
+                color: #777;
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+                color: #777;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+                color: #777;
+                opacity: 1;
+            }
+            :-moz-placeholder { /* Firefox 4 - 18 */
+                color: #777;
+                opacity: 1;
+            }
+
+            #mc-embedded-subscribe {
+                border-top: 1px solid #868686;
+                background: #464646;
+                background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#464646));
+                background: -webkit-linear-gradient(top, #606060, #464646);
+                background: -moz-linear-gradient(top, #606060, #464646);
+                background: -ms-linear-gradient(top, #606060, #464646);
+                background: -o-linear-gradient(top, #606060, #464646);
+                font-size: 12px;
+                text-transform: uppercase;
+                border: 1px solid #313131;
+                -webkit-border-radius: 37px;
+                -moz-border-radius: 37px;
+                border-radius: 37px;
+                padding: 8px 15px;
+                background-color: #606060;
+                color: #000
+            }
+        </style>
+	    <!-- Vendor JS -->
+	<script src="vendor/jquery-1.12.4.min.js"></script>
+
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+
+	<!-- App JS -->
+	<script src="js/functions.js"></script>
 </head>
 
-<div id="container">
-<body id="body">
+<body>
+<div class="wrapper">
 
-	<div style="height: 463px; width: 100%; background-color: #ededee; background-image: url(img/top-background-center.jpg); background-repeat:no-repeat; background-position: center center; "><img src="img/TD-logo-phone.png" style="position: absolute; left: 50%; margin-left: -317px; top: 135px;"></div>
-			
-	<div style="background-color: #000; height: 2px; width: 100%;">&nbsp;</div>
-			
-	<div style="height: 700px; width: 100%; background: #252525; background-image: url(img/bottom-background-center2.jpg); background-repeat:no-repeat; background-position: center; ">
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
+					<div class="intro__inner">
+						
+					<div class="intro__content">
+						<a href="#" class="logo intro__logo"></a>
+							
+						<h1>Thermal smart connected device.</h1>
+
+						<h3>Flood detection, fire detection and much more.</h3>
+					</div><!-- /.intro__content -->
+					
+						<img src="css/images/temp/iphone.png" alt="" width="328" height="328" />
+					</div><!-- /.intro__inner -->
+				</div><!-- /.col-md-6 -->
+			</div><!-- /.row -->
+		</div><!-- /.conteiner -->
+	</div><!-- /.intro -->
 	
-		<div style="display: inline; margin-left: auto; margin-right: auto; text-align: center; overflow: hidden;">
-			
-			<!-- Begin MailChimp Signup Form -->
-			<!--<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-			<style type="text/css">
-				#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:300px; color: #909090; padding-top: 10px; text-align: center; }
-				/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-				   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-			</style>-->
-			<div id="mc_embed_signup" style="padding-top: 20px;">
-				<form action="//eyespike.us1.list-manage.com/subscribe/post?u=31b543d818abd636052231a29&amp;id=3e91d8aa07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<div id="mc_embed_signup_scroll">
+	<section class="section-dark">
+		<div class="search section__search">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
+                        <!-- Begin MailChimp Signup Form -->
+                        <!--<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                        <style type="text/css">
+                            #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:300px; color: #909090; padding-top: 10px; text-align: center; }
+                            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                        </style>-->
+                        <div id="mc_embed_signup" style="padding-top: 20px;">
+                            <form action="//eyespike.us1.list-manage.com/subscribe/post?u=31b543d818abd636052231a29&amp;id=3e91d8aa07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
 
-				
-				<div class="mc-field-group">
-					<img src="img/get-notified-when-we-launch.png">
-					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email address...">
-					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-				</div>
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_31b543d818abd636052231a29_3e91d8aa07" tabindex="-1" value=""></div>
-					<div class="clear"></div>
-					</div>
-				</form>
-			</div>
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-			<!--End mc_embed_signup-->
-			
-		</div>
-	</div>
-			
-			
+
+                                    <div class="mc-field-group">
+                                        <img src="img/get-notified-when-we-launch.png">
+                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email address...">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_31b543d818abd636052231a29_3e91d8aa07" tabindex="-1" value=""></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                        <!--End mc_embed_signup-->
+					    
+                        <!--<form action="" method="get">
+							<h2>Get notified when we launch!</h2>
+
+							<label for="f_search" class="hidden">Search</label>
+		
+							<input type="text" name="f_search" id="f_search" class="search__field" placeholder="Enter your email address.." />
+		
+							<button class="btn btn--rounded btn--dark btn--border search__btn">Subscribe</button>
+						</form>-->
+					</div><!-- /.col-md-8 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.search -->
+		
+		<div class="section__media">
+			<div class="section__media__inner">
+				<div class="container">
+					<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
+						<div class="section__media__holder">
+							<iframe width="620" height="340" src="https://www.youtube.com/embed/UQzbddK6jr8" frameborder="0" allowfullscreen></iframe>
+						</div><!-- /.section__media__holder -->
+					</div><!-- /.col-md-8 -->
+				</div><!-- /.container -->
+			</div><!-- /.section__media__inner -->
+		</div><!-- /.section__media -->
+		
+		<div class="section__inner">
+			<div class="container">
+				<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
+					<ul class="features section__features">
+						<li class="feature">
+							<div class="feature__image">
+								<i class="logo-first"></i>
+							</div><!-- /.feature__image -->
+							
+							<div class="feature__content">
+								<h1>
+									<a href="#">
+										Thermo Defender Wins<br>
+										at CES 2017!
+									</a>
+								</h1>
+							
+								<span>
+									<a href="#" class="link-more feature__link">Read More</a>
+								</span>
+							</div><!-- /.feature__content -->						
+						</li>
+						
+						<li class="feature">
+							<div class="feature__image">
+								<i class="logo-newspaper"></i>
+							</div><!-- /.feature__image -->
+							
+							<div class="feature__content">
+								<h1>
+									<a href="#">
+										Inventor Brian Boatright
+										Featured in Newspaper!
+									</a>
+								</h1>
+							
+								<span>
+									<a href="https://lepton.flir.com/bring-the-heat-maker-challenge-semifinalists/" class="link-more feature__link">Read More</a>
+								</span>
+							</div><!-- /.feature__content -->						
+						</li>
+					</ul><!-- /.list-features -->
+				</div><!-- /.col-md-8 -->
+			</div><!-- /.container -->
+		</div><!-- /.section__features -->
+	</section><!-- /.section -->
+	<footer class="footer">
+		<div class="container">
+			<div class="col-md-8 col-md-offset-2">
+				<p class="copyright">Copyright &copy; Thermo Defender 2017</p><!-- /.copyright -->
+			</div><!-- /.col-md-8 -->
+		</div><!-- /.container -->
+	</footer><!-- /.footer -->
+</div><!-- /.wrapper -->
 </body>
-<div id="footer"><p style="color: #504f4f; font-size: 12px; font-family: Helvetica, Arial, Sans-Serif; padding-top: 2px; text-align: center;">Copyright © Thermo Defender 2017</p></div>
-</div>
-
 </html>
+
